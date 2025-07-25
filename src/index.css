@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Medical Dashboard Design System - HSL Colors Only */
+
+/* Hide scrollbar visually but keep scrolling */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+.custom-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+
+@layer base {
+  :root {
+    /* Main backgrounds */
+    --background: 0 0% 99%;
+    --foreground: 222 20% 15%;
+    
+    /* Sidebar theme */
+    --sidebar-background: 220 26% 14%;
+    --sidebar-foreground: 210 40% 95%;
+    --sidebar-accent: 217 91% 60%;
+    --sidebar-accent-light: 217 91% 65%;
+    --sidebar-muted: 220 15% 25%;
+    
+    /* Medical theme colors */
+    --medical-primary: 217 91% 60%;
+    --medical-primary-dark: 217 91% 50%;
+    --medical-success: 142 76% 36%;
+    --medical-warning: 43 96% 56%;
+    --medical-danger: 0 84% 60%;
+    --medical-info: 188 78% 47%;
+    
+    /* Card backgrounds */
+    --card: 0 0% 100%;
+    --card-foreground: 222 20% 15%;
+    --card-border: 220 13% 91%;
+    
+    /* Appointment gradient */
+    --appointment-gradient: linear-gradient(135deg, hsl(188 78% 47%) 0%, hsl(217 91% 60%) 100%);
+    --appointment-text: 0 0% 100%;
+    
+    /* Health metrics */
+    --temp-color: 0 84% 60%;
+    --bp-color: 217 91% 60%;
+    --sugar-color: 43 96% 56%;
+    --weight-color: 188 78% 47%;
+    
+    /* Status colors */
+    --status-active: 142 76% 36%;
+    --status-pending: 43 96% 56%;
+    --status-completed: 220 15% 60%;
+    
+    /* Chat theme */
+    --chat-background: 0 0% 98%;
+    --chat-bubble: 217 91% 60%;
+    --chat-bubble-text: 0 0% 100%;
+    --chat-user: 0 0% 95%;
+    
+    /* Progress theme */
+    --progress-background: 220 15% 25%;
+    --progress-fill: 142 76% 36%;
+    
+    /* Semantic tokens */
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 13% 91%;
+    --secondary-foreground: 222 20% 15%;
+    --muted: 220 13% 96%;
+    --muted-foreground: 220 15% 45%;
+    --accent: 217 91% 60%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 217 91% 60%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Dark mode - keeping the medical dashboard style consistent */
+    --background: 220 26% 14%;
+    --foreground: 210 40% 95%;
+    
+    --card: 220 20% 18%;
+    --card-foreground: 210 40% 95%;
+    
+    --sidebar-background: 220 30% 10%;
+    --sidebar-foreground: 210 40% 95%;
+    --sidebar-accent: 217 91% 60%;
+    --sidebar-muted: 220 15% 25%;
+    
+    --medical-primary: 217 91% 65%;
+    --medical-primary-dark: 217 91% 55%;
+    
+    --primary: 217 91% 65%;
+    --primary-foreground: 220 26% 14%;
+    
+    --secondary: 220 15% 25%;
+    --secondary-foreground: 210 40% 95%;
+    
+    --muted: 220 15% 20%;
+    --muted-foreground: 220 15% 65%;
+    
+    --accent: 217 91% 65%;
+    --accent-foreground: 220 26% 14%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 95%;
+    
+    --border: 220 15% 25%;
+    --input: 220 15% 25%;
+    --ring: 217 91% 65%;
+    
+    --chat-background: 220 15% 20%;
+    --chat-bubble: 217 91% 60%;
+    --chat-user: 220 15% 25%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

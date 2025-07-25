@@ -28,7 +28,7 @@ const sidebarItems: SidebarItem[] = [
   {
     id: "logo",
     label: "Med Dashboard",
-    icon: "/logo.png",
+    icon: "/med logo.png",
     group: "logo",
     isLogo: true
   },

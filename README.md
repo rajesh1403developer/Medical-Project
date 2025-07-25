@@ -1,5 +1,10 @@
 # Medical Dashboard UI
 
+## 🔗 GitHub Repository  
+[https://github.com/rajesh1403developer/Medical-Project](https://github.com/rajesh1403developer/Medical-Project)
+
+---
+
 ## Project Info
 
 This is a responsive medical dashboard web application designed with modern UI principles and clean layout components.
@@ -22,10 +27,10 @@ Make sure you have **Node.js** and **npm** installed. You can install Node via [
 
 ```bash
 # 1. Clone the repository
-git clone <YOUR_REPO_URL>
+git clone https://github.com/rajesh1403developer/Medical-Project.git
 
 # 2. Navigate to the project folder
-cd <Med Project>
+cd Medical-Project
 
 # 3. Install dependencies
 npm install

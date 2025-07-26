@@ -8,6 +8,8 @@ import {
 import { Button } from "@/components/ui/button";
 import { Switch } from "@/components/ui/switch";
 import { cn } from "@/lib/utils";
+import { useNavigate } from "react-router-dom";
+
 
 interface SidebarItem {
   id: string;
@@ -16,6 +18,7 @@ interface SidebarItem {
   group?: string;
   active?: boolean;
   isLogo?: boolean;
+  path?: string;
   children?: SidebarItem[];
 }
 
@@ -30,10 +33,10 @@ const sidebarItems: SidebarItem[] = [
     label: "Med Dashboard",
     icon: "/med logo.png",
     group: "logo",
-    isLogo: true
+    isLogo: true,
   },
   { id: "home", label: "Home", icon: Home, active: true, group: "home" },
-  { id: "appointments", label: "Appointments", icon: Calendar, group: "main" },
+  { id: "appointments", label: "Appointments", icon: Calendar, group: "main", path: "/appointmentdashboard" },
   { id: "family", label: "My Family", icon: Users, group: "main" },
   { id: "doctors", label: "My Doctors", icon: UserCheck, group: "main" },
   { id: "reports", label: "Reports", icon: FileText, group: "main" },
@@ -53,7 +56,7 @@ const sidebarItems: SidebarItem[] = [
 export function DashboardSidebar({ collapsed, onToggleCollapse }: DashboardSidebarProps) {
   const [isDark, setIsDark] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
-
+  const navigate = useNavigate();
   const handleDropdownToggle = (id: string) => {
     setOpenDropdown((prev) => (prev === id ? null : id));
   };
@@ -83,8 +86,13 @@ export function DashboardSidebar({ collapsed, onToggleCollapse }: DashboardSideb
                   collapsed && "justify-center px-0"
                 )}
                 onClick={() => {
-                  if (!isLogo && item.children) handleDropdownToggle(item.id);
+                  if (!isLogo && item.children) {
+                    handleDropdownToggle(item.id);
+                  } else if (!item.children && !isLogo && item.path) {
+                    navigate(item.path);
+                  }
                 }}
+
               >
                 {typeof item.icon === "string" ? (
                   <img src={item.icon} alt="Logo" className="h-5 w-5 object-contain" />
@@ -108,11 +116,13 @@ export function DashboardSidebar({ collapsed, onToggleCollapse }: DashboardSideb
                   <li key={child.id}>
                     <Button
                       variant="ghost"
+                      onClick={() => child.path && navigate(child.path)}  
                       className="w-full flex items-center px-3 py-2 text-sm text-[#333] rounded-md hover:bg-[#D0E9FF] hover:text-[#333]"
                     >
                       <child.icon className="w-4 h-4 text-[#333]" />
                       <span className="ml-2">{child.label}</span>
                     </Button>
+
                   </li>
                 ))}
               </ul>

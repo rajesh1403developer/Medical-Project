@@ -1,0 +1,214 @@
+{
+  "doctors": [
+    {
+      "id": "faizan",
+      "name": "Dr. Faizan Khan",
+      "avatar": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=64&h=64&fit=crop&crop=face",
+      "count": 42
+    },
+    {
+      "id": "sneha",
+      "name": "Dr. Sneha Iyer",
+      "avatar": "https://images.unsplash.com/photo-1594824111313-5b78ecb5e113?w=64&h=64&fit=crop&crop=face",
+      "count": 32
+    },
+    {
+      "id": "priya",
+      "name": "Dr. Priya Sharma",
+      "avatar": "https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=64&h=64&fit=crop&crop=face",
+      "count": 30
+    },
+    {
+      "id": "vivek",
+      "name": "Dr. Vivek Nair",
+      "avatar": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=64&h=64&fit=crop&crop=face",
+      "count": 15
+    },
+    {
+      "id": "arjun",
+      "name": "Dr. Arjun Malhotra",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=64&h=64&fit=crop&crop=face",
+      "count": 18
+    }
+  ],
+  "appointments": [
+    {
+      "time": "08:00",
+      "doctorId": "faizan",
+      "patient": "Emily Thompson",
+      "condition": "Asthma",
+      "avatar": "profile.jpg",
+      "backgroundColor": "bg-blue-100",
+      "borderColor": "border-blue-300",
+      "isStriped": false,
+      "status": "past",
+      "hasIcon": true
+    },
+    {
+      "time": "09:00",
+      "doctorId": "priya",
+      "patient": "Benjamin Harris",
+      "condition": "COVID-19",
+      "avatar": "profile.jpg",
+      "backgroundColor": "bg-blue-100",
+      "borderColor": "border-blue-300",
+      "isStriped": false,
+      "status": "past",
+      "hasIcon": false
+    },
+    {
+      "time": "11:00",
+      "doctorId": "priya",
+      "patient": "James Moore",
+      "condition": "Chronic Back Pain",
+      "avatar": "profile.jpg",
+      "backgroundColor": "bg-blue-100",
+      "borderColor": "border-blue-300",
+      "isStriped": false,
+      "status": "future",
+      "hasIcon": true
+    },
+    {
+      "time": "10:00",
+      "doctorId": "faizan",
+      "patient": "Sophia Martinez",
+      "condition": "Migraine",
+      "avatar": "profile.jpg",
+      "backgroundColor": "bg-white",
+      "borderColor": "border-blue-300",
+      "isStriped": true,
+      "status": "current",
+      "hasIcon": true
+    },
+    {
+      "time": "08:00",
+      "doctorId": "sneha",
+      "patient": "Liam Johnson",
+      "condition": "Type 1 Diabetes",
+      "avatar": "profile.jpg",
+      "backgroundColor": "bg-green-100",
+      "borderColor": "border-green-300",
+      "isStriped": false,
+      "status": "past",
+      "hasIcon": true
+    },
+    {
+      "time": "09:00",
+      "doctorId": "vivek",
+      "patient": "Grace Young",
+      "condition": "Flu",
+      "avatar": "profile.jpg",
+      "backgroundColor": "bg-green-100",
+      "borderColor": "border-green-300",
+      "isStriped": false,
+      "status": "past",
+      "hasIcon": false
+    },
+    {
+      "time": "11:00",
+      "doctorId": "faizan",
+      "patient": "Ava Robinson",
+      "condition": "Anemia",
+      "avatar": "profile.jpg",
+      "backgroundColor": "bg-green-100",
+      "borderColor": "border-green-300",
+      "isStriped": false,
+      "status": "future",
+      "hasIcon": false
+    },
+    {
+      "time": "10:00",
+      "doctorId": "vivek",
+      "patient": "Sophia Martinez",
+      "condition": "Migraine",
+      "avatar": "profile.jpg",
+      "backgroundColor": "bg-white",
+      "borderColor": "border-green-300",
+      "isStriped": true,
+      "status": "current",
+      "hasIcon": true
+    },
+    {
+      "time": "11:00",
+      "doctorId": "arjun",
+      "patient": "James Moore",
+      "condition": "Chronic Back Pain",
+      "avatar": "profile.jpg",
+      "backgroundColor": "bg-white",
+      "borderColor": "border-red-300",
+      "isStriped": true,
+      "status": "future",
+      "hasIcon": true
+    },
+    {
+      "time": "11:00",
+      "doctorId": "sneha",
+      "patient": "James Moore",
+      "condition": "Chronic Back Pain",
+      "avatar": "profile.jpg",
+      "backgroundColor": "bg-white",
+      "borderColor": "border-red-300",
+      "isStriped": true,
+      "status": "future",
+      "hasIcon": true
+    },
+    {
+      "time": "11:00",
+      "doctorId": "priya",
+      "patient": "James Moore",
+      "condition": "Chronic Back Pain",
+      "avatar": "profile.jpg",
+      "backgroundColor": "bg-white",
+      "borderColor": "border-red-300",
+      "isStriped": true,
+      "status": "future",
+      "hasIcon": true
+    },
+    {
+      "time": "01:00",
+      "doctorId": "arjun",
+      "patient": "Matthew Baker",
+      "condition": "Pneumonia",
+      "avatar": "profile.jpg",
+      "backgroundColor": "bg-red-100",
+      "borderColor": "border-red-300",
+      "isStriped": false,
+      "status": "future",
+      "hasIcon": false
+    },
+    {
+      "time": "02:00",
+      "doctorId": "priya",
+      "patient": "Abigail Nelson",
+      "condition": "Eczema",
+      "avatar": "profile.jpg",
+      "backgroundColor": "bg-red-100",
+      "borderColor": "border-red-300",
+      "isStriped": false,
+      "status": "future",
+      "hasIcon": false
+    },
+    {
+      "time": "02:00",
+      "doctorId": "arjun",
+      "patient": "Aiden Mitchell",
+      "condition": "Gastroenteritis",
+      "avatar": "profile.jpg",
+      "backgroundColor": "bg-red-100",
+      "borderColor": "border-red-300",
+      "isStriped": false,
+      "status": "future",
+      "hasIcon": false
+    }
+  ],
+  "timeSlots": [
+    "08:00",
+    "09:00",
+    "10:00",
+    "11:00",
+    "12:00",
+    "01:00",
+    "02:00"
+  ],
+  "currentTime": "10:10 AM"
+}
